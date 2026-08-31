@@ -12,11 +12,14 @@
         }
 
         :root {
-            --navy: #1a1f4d;
-            --navy-light: #2d3366;
-            --olive: #6b7566;
+            --navy: #194d3d;
+            --navy-light: #245a48;
+            --olive: #5f7a6e;
             --olive-light: #8a9580;
-            --accent: #2e8b57;
+            --shop-bg: #eef1ea;
+            --shop-orange: #e1673f;
+            --shop-orange-hover: #cd4b20;
+            --accent: #e1673f;
             --white: #ffffff;
             --gray-light: #f8f9fa;
             --gray-medium: #e9ecef;
@@ -39,23 +42,9 @@
         }
 
         /* ===== HEADER ===== */
-        header {
-            background: var(--white);
-            border-bottom: 1px solid var(--border);
-            padding: var(--spacing-md) 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+        header { background: #ffffff; border-bottom: 1px solid #dfdfdf; padding: 12px 24px; }
 
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 var(--spacing-md);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        .header-container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
 
         .logo {
             height: 50px;
@@ -77,7 +66,7 @@
 
         /* ===== HERO SECTION ===== */
         .hero {
-            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            background: linear-gradient(rgba(25,77,61,0.82), rgba(25,77,61,0.82)), url('https://www.ecowoof.ro/cdn/shop/files/hero-labrador.png?height=750&v=1784147462') center/cover no-repeat;
             color: var(--white);
             padding: var(--spacing-2xl) var(--spacing-md);
             text-align: center;
@@ -131,7 +120,7 @@
         /* ===== CTA BUTTON ===== */
         .cta-button {
             display: inline-block;
-            background: var(--success);
+            background: var(--shop-orange);
             color: var(--white);
             padding: 14px 32px;
             border: none;
@@ -559,7 +548,7 @@
             }
         }
     </style>
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Instrument+Serif&display=swap" rel="stylesheet"></head>
 <body>
     <!-- HEADER -->
     <header>
@@ -777,6 +766,34 @@
     </section>
 
     <!-- REGISTRATION FORM -->
+    <section style="background: #eef1ea; padding: 56px 24px;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <h2 style="font-family: 'Instrument Serif', Georgia, serif; color: #194d3d; font-size: 34px; margin-bottom: 8px; text-align: center;">Unsere Leckerlis — direkt aus der EU-Produktion</h2>
+            <p style="text-align: center; color: #5f7a6e; margin-bottom: 32px;">Denselben Snacks, die deine Kunden bei uns im Shop finden.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+                <div style="background: #fff; border: 1px solid #dfdfdf; border-radius: 12px; overflow: hidden;">
+                    <img src="https://www.ecowoof.ro/cdn/shop/files/1_3a782577-7c69-40bb-bedf-ec7653fcde14.png?width=600" alt="VITAL BITES 80% Fish 3x100g" style="width: 100%; height: 220px; object-fit: cover;">
+                    <div style="padding: 16px;"><strong style="color: #194d3d;">VITAL BITES</strong><div style="font-size: 13px; color: #495057;">80 % Fisch · 3x100 g</div></div>
+                </div>
+                <div style="background: #fff; border: 1px solid #dfdfdf; border-radius: 12px; overflow: hidden;">
+                    <img src="https://www.ecowoof.ro/cdn/shop/files/2_62da84c0-1da9-4673-8721-512b90af15cf.png?width=600" alt="TRIPLE BITES 80% Fish 3x100g" style="width: 100%; height: 220px; object-fit: cover;">
+                    <div style="padding: 16px;"><strong style="color: #194d3d;">TRIPLE BITES</strong><div style="font-size: 13px; color: #495057;">80 % Fisch · 3x100 g</div></div>
+                </div>
+                <div style="background: #fff; border: 1px solid #dfdfdf; overflow: hidden; border-radius: 12px;">
+                    <img src="https://www.ecowoof.ro/cdn/shop/files/1.2.png?width=600" alt="VITAL BITES 80% Fisch 6x100g" style="width: 100%; height: 220px; object-fit: cover;">
+                    <div style="padding: 16px;"><strong style="color: #194d3d;">VITAL BITES</strong><div style="font-size: 13px; color: #495057;">80 % Fisch · 6x100 g</div></div>
+                </div>
+                <div style="background: #fff; border: 1px solid #dfdfdf; overflow: hidden; border-radius: 12px;">
+                    <img src="https://www.ecowoof.ro/cdn/shop/files/10_aa72a056-16af-4564-a405-cd64c9d22101.png?width=600" alt="Chipsuri din somn cu drojdie de bere" style="width: 100%; height: 220px; object-fit: cover;">
+                    <div style="padding: 16px;"><strong style="color: #194d3d;">SOMN CHIPS</strong><div style="font-size: 13px; color: #495057;">Bierhefe · 3x125 g</div></div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 28px;">
+                <a href="https://www.ecowoof.ro" target="_blank" style="display: inline-block; background: var(--shop-orange); color: #fff; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 600;">Zum Online-Shop →</a>
+            </div>
+        </div>
+    </section>
+
     <section class="registration-section" id="registration">
         <div class="form-container">
             <h2 class="form-title">Exklusive Warteliste</h2>
